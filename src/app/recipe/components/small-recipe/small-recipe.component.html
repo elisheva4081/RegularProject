@@ -1,0 +1,21 @@
+  <div class="cardbox">
+    <mat-card class="card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{recipe?.name}}</mat-card-title>
+        <mat-card-subtitle>{{recipe?.preparationTime}} minutes</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src={{recipe?.routingImage}} alt="Photo of a Shiba Inu">
+      
+      <mat-card-content>difficulty level {{""|difficultyLevel:recipe?.difficultyLevel}}</mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>READ MORE <span class="pi-chevron-circle-right"></span>
+        </button>
+      </mat-card-actions>
+     
+
+    </mat-card>
+  
+  </div>
+
